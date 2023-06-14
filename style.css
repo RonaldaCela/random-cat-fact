@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #d1b3c4;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   overflow: hidden;
+   margin: 0;
+   padding: 20px;
+}
+
+
+.loader {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 8px solid #e8c2ca;
+   border-top: 8px solid #b392ac; 
+   border-bottom: 8px solid #b392ac; 
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   animation: spin 1.5s linear infinite;
+   margin: 80px auto;
+ }
+ 
+ .loader[hidden] {
+   display: none;
+ }
+
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
+
+.container{
+    background-color: aliceblue;
+    border-radius: 20px;
+    max-width: 100%;
+    width: 800px;
+    padding: 50px 20px;
+    text-align: center;
+    width: 800px; 
+    height: 500px;
+ }
+
+h2{
+   margin: 0;
+   opacity: 0.5;
+   letter-spacing: 2px;
+   font-family: "Schoolbell";
+}
+
+ img{
+   margin: 0;
+   display: inline;
+ }
+
+.fact{
+   margin: 60px auto;
+   max-width: 600px;
+   line-height: 40px;
+   letter-spacing: 0.5px;
+   font-size: 20px;
+   white-space:normal;
+   font-family: "Schoolbell";
+}
+
+.btn{
+   background-color: #735d78;
+   color: #fff;
+   border: 0;
+   border-radius: 8px;
+   padding: 12px 24px;
+   font-size: 16px;
+   cursor: pointer;
+   position: fixed;
+   top: 520px; 
+   right: 685px; 
+   font-family: "Schoolbell";
+}
